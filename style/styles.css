@@ -1,0 +1,29 @@
+input {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.searchInput {
+    display: inline;
+}
+
+.small-text {
+    width: 350px;
+}
+
+textarea {
+    display: block;
+    width: 50vw;
+    min-width: 350px;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    margin: 3%;
+    font-size: 3rem;
+}

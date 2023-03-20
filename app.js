@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override')
+const Contact = require('./models/contact')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -19,8 +20,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/contactNetwork')
         console.log(err)
     })
 
+let year = new Date().getFullYear();
+
 app.get('/', (req, res) => {
-    res.render('new-contact')
+    res.render('new-contact', {year})
 })
 
 app.get('/search', (req, res) => {
@@ -28,7 +31,7 @@ app.get('/search', (req, res) => {
 })
 
 app.post('/new-contact', (req, res) => {
-    res.redirect('search')
+    res.send(req.body)
 })
 
 app.listen(3000, () => {

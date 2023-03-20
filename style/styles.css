@@ -1,3 +1,7 @@
+body {
+    background-color: azure;
+}
+
 input {
     display: block;
     margin-bottom: 1.5rem;
@@ -26,4 +30,14 @@ label {
     text-align: center;
     margin: 3%;
     font-size: 3rem;
+}
+
+.footer-container {
+    padding: 3rem;
+    margin-top: 1.5rem;
+    background-color: aqua;
+}
+
+.copyright {
+    text-align: center;
 }

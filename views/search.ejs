@@ -4,17 +4,28 @@
 
     <div class="container-fluid">
         <h2>Search Your Contacts</h2>
-        <form action="">
-            <label for="searchName">Contact Name</label>
-            <input class="searchInput" type="text" name="searchName" id="searchName">
-            <label for="searchCompany">Company</label>
-            <input class="searchInput" type="text" name="searchCompany" id="searchCompany">
-            <label for="searchJob">Job Title</label>
-            <input class="searchInput" type="text" name="searchJob" id="searchJob">
+
+
+        <form action="" method="GET">
+            <div class="row">
+                <div class="col-4">
+                    <label for="searchName">Contact Name</label>
+                    <input class="searchInput" type="text" name="searchName" id="searchName">
+                </div>
+                <div class="col-4">
+                    <label for="searchCompany">Company</label>
+                    <input class="searchInput" type="text" name="searchCompany" id="searchCompany">
+                </div>
+                <div class="col-4">
+                    <label for="searchJob">Job Title</label>
+                    <input class="searchInput" type="text" name="searchJob" id="searchJob">
+                </div>
+            </div>
             <button class="btn btn-primary" type="submit">Submit</button>
+
         </form>
+
+
     </div>
 
-</body>
-
-</html>
+    <%- include('footer') %>

@@ -27,11 +27,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/search', (req, res) => {
-    res.render('search')
+    res.render('search', {year})
 })
 
-app.post('/new-contact', (req, res) => {
-    res.send(req.body)
+app.post('/new-contact', async (req, res) => {
+    const contact = new Contact(req.body);
+    await contact.save()
+    res.redirect('/search')
 })
 
 app.listen(3000, () => {

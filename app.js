@@ -36,6 +36,10 @@ app.post('/new-contact', async (req, res) => {
     res.redirect('/search')
 })
 
+app.use((req, res) => {
+    res.status(404).render('not-found')
+})
+
 app.listen(3000, () => {
     console.log('SERVER IS LIVE ON PORT 3000')
 })

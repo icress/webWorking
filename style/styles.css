@@ -7,6 +7,10 @@ input {
     margin-bottom: 1.5rem;
 }
 
+.navbar-brand {
+    font-weight: bold;
+}
+
 .small-text {
     width: 350px;
 }
@@ -30,10 +34,13 @@ label {
 
 .footer-container {
     padding: 3rem;
-    margin-top: 1.5rem;
-    background-color: aqua;
+    background-color: rgb(49, 49, 51);
 }
 
 .copyright {
     text-align: center;
+}
+
+#search {
+    width: 100%;
 }

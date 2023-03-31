@@ -1,28 +1,18 @@
 <%- include('header') %>
 
-    <h1 class="title">WebWorking</h1>
+    <h1 class="title">Search Your Contacts</h1>
 
     <div class="container-fluid">
-        <h2>Search Your Contacts</h2>
 
-
-        <form action="" method="GET">
+        <form action="" method="GET" class="justify-content-center">
             <div class="row">
-                <div class="col-4">
-                    <label for="searchName">Contact Name</label>
-                    <input class="searchInput" type="text" name="searchName" id="searchName">
+                <div class="col-6 offset-3">
+                    <input type="text" name="search" id="search"
+                    placeholder="Search by name, company, location, or job title">
+                <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
-                <div class="col-4">
-                    <label for="searchCompany">Company</label>
-                    <input class="searchInput" type="text" name="searchCompany" id="searchCompany">
-                </div>
-                <div class="col-4">
-                    <label for="searchJob">Job Title</label>
-                    <input class="searchInput" type="text" name="searchJob" id="searchJob">
-                </div>
+                
             </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-
         </form>
 
 
